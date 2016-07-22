@@ -11,6 +11,7 @@ public class DataNode {
 	private String value;
 	private Date timestamp;
 	private int id;
+	private String deviceId;
 
 
 	public int getId() {
@@ -67,6 +68,14 @@ public class DataNode {
 
 	public void setTimestamp(Date timestamp) {
 		this.timestamp = timestamp;
+	}
+
+	public String getDeviceId() {
+		return deviceId;
+	}
+
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
 	}
 
 	@Override
