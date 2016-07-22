@@ -29,7 +29,7 @@ public class NodeDAO {
 				dn.setQuality(rs.getString("c_quality"));
 				dn.setName(rs.getString("c_name"));
 				dn.setValue(rs.getString("c_value"));
-				dn.setTimestamp(rs.getDate("d_dateline"));
+				dn.setTimestamp(rs.getTimestamp("d_dateline"));
 				dn.setDeviceId(rs.getString("c_deviceid"));
 			}
 
