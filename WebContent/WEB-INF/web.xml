@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	id="WebApp_ID" version="3.1">
-
-	<!-- 声明servlet -->
-	<servlet>
-		<servlet-name>GetValueServlet</servlet-name>
-		<servlet-class>com.pactera.servlet.GetValueServlet</servlet-class>
-	</servlet>
-
-	<!-- servlet映射 -->
-	<servlet-mapping>
-		<servlet-name>GetValueServlet</servlet-name>
-		<url-pattern>/value</url-pattern>
-	</servlet-mapping>
-
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+    <servlet-name>GetValueServlet</servlet-name>
+    <servlet-class>com.pactera.servlet.GetValueServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MaxMinValueServlet</servlet-name>
+    <servlet-class>com.pactera.servlet.MaxMinValueServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetValueServlet</servlet-name>
+    <url-pattern>/value</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MaxMinValueServlet</servlet-name>
+    <url-pattern>/maxmin</url-pattern>
+  </servlet-mapping>
 </web-app>
